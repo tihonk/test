@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../out/production/dynamic_models" />
+    <output-test url="file://$MODULE_DIR$/../out/test/dynamic_models" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../dynamic_models">
+      <sourceFolder url="file://$MODULE_DIR$/../dynamic_models/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../dynamic_models/src/main/java" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
