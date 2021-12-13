@@ -1,39 +1,19 @@
-package egg.actions.services.impl;
+package egg.actions.services.field.impl;
 
-import egg.actions.repository.FieldRepository;
-import egg.actions.services.FieldService;
+import egg.actions.services.field.RealtyService;
 import egg.models.mainModels.FieldModel;
 import egg.models.mainModels.UserModel;
-
 import static egg.models.FieldStatus.WHITE_FIELD;
 
-public class FieldServiceImpl implements FieldService {
+public class RealtyServiceImpl implements RealtyService {
 
     private static final Double DEFAULT_DEFENSE_FORCE = 100.0;
     private static final Double DEFAULT_ATTACK_FORCE = 0.0;
 
-    private FieldRepository repository;
-
-    public void getFreeField(UserModel user) {
-        FieldModel newField = generateFreeField(user);
-        repository.save(newField);
+    public void giveFreeField(UserModel user){
     }
 
-    public void buyTheField(FieldModel field, UserModel user) {
-        field.setUser(user);
-        repository.save(field);
-    }
-
-    public void attackTheField() {
-
-    }
-
-    public void fillInTheField() {
-
-    }
-
-    public void likeTheField() {
-
+    public void buyTheField(UserModel buyerUser, FieldModel boughtField) {
     }
 
     private FieldModel generateFreeField(UserModel user) {
