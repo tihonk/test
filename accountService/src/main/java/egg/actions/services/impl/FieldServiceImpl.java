@@ -34,7 +34,6 @@ public class FieldServiceImpl implements FieldService {
     }
 
     public void fillInTheField() {
-
     }
 
     public void likeTheField(Long likedUserId, Long likedFieldId) {

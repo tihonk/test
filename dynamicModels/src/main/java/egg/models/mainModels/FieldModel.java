@@ -2,6 +2,8 @@ package egg.models.mainModels;
 
 import egg.models.FieldStatus;
 
+import java.util.Date;
+
 public class FieldModel {
 
     private Long id;
@@ -11,6 +13,8 @@ public class FieldModel {
     private Double latitude;
     private Double defenseForce;
     private Double attackForce;
+    private Date lastRentPayment;
+    private Date captureDate;
 
     public FieldModel(FieldStatus status) {
         this.status = status;
@@ -70,5 +74,21 @@ public class FieldModel {
 
     public void setAttackForce(Double attackForce) {
         this.attackForce = attackForce;
+    }
+
+    public Date getLastRentPayment() {
+        return lastRentPayment;
+    }
+
+    public void setLastRentPayment(Date lastRentPayment) {
+        this.lastRentPayment = lastRentPayment;
+    }
+
+    public Date getCaptureDate() {
+        return captureDate;
+    }
+
+    public void setCaptureDate(Date captureDate) {
+        this.captureDate = captureDate;
     }
 }
