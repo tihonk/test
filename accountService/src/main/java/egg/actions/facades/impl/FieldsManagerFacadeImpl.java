@@ -2,11 +2,20 @@ package egg.actions.facades.impl;
 
 import egg.actions.facades.FieldsManagerFacade;
 import egg.actions.services.FieldService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public class FieldsManagerFacadeImpl implements FieldsManagerFacade {
 
-    private FieldService fieldService;
+    private final FieldService fieldService;
+
+    @Autowired
+    public FieldsManagerFacadeImpl(FieldService fieldService){
+        super();
+        this.fieldService = fieldService;
+    }
 
     public void giveFreeField(Long userId) {
         fieldService.giveFreeField(userId);
