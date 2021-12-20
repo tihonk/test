@@ -8,16 +8,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>accountService</module>
-        <module>dynamicModels</module>
+        <module>user_actions</module>
+        <module>dynamic_models</module>
     </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>5.3.14</version>
-        </dependency>
-    </dependencies>
 
 </project>
