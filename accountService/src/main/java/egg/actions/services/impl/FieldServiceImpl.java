@@ -9,7 +9,7 @@ import egg.models.mainModels.FieldModel;
 import egg.models.mainModels.UserModel;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("fieldService")
 public class FieldServiceImpl implements FieldService {
 
     private RealtyService realtyService;

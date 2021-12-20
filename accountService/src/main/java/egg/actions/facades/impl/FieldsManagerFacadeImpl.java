@@ -3,6 +3,7 @@ package egg.actions.facades.impl;
 import egg.actions.facades.FieldsManagerFacade;
 import egg.actions.services.FieldService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -11,7 +12,7 @@ public class FieldsManagerFacadeImpl implements FieldsManagerFacade {
     private final FieldService fieldService;
 
     @Autowired
-    public FieldsManagerFacadeImpl(FieldService fieldService){
+    public FieldsManagerFacadeImpl(@Qualifier("fieldService") FieldService fieldService){
         super();
         this.fieldService = fieldService;
     }
